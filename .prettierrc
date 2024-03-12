@@ -7,13 +7,15 @@
     {
       "files": "*.mdx",
       "options": {
-        "printWidth": 70
+        "printWidth": 70,
+        "semi": false
       }
     },
     {
       "files": "data/**/*.mdx",
       "options": {
-        "printWidth": 80
+        "printWidth": 80,
+        "semi": false
       }
     }
   ]

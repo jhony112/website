@@ -5,17 +5,17 @@ sourcePath: components/callout
 ---
 
 ```jsx live=true
-import { CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes';
-import { InfoCircledIcon } from '@radix-ui/react-icons';
+import { CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes'
+import { InfoCircledIcon } from '@radix-ui/react-icons'
 
-<CalloutRoot>
+;<CalloutRoot>
   <CalloutIcon>
     <InfoCircledIcon />
   </CalloutIcon>
   <CalloutText>
     You will need admin privileges to install and access this application.
   </CalloutText>
-</CalloutRoot>;
+</CalloutRoot>
 ```
 
 ## API Reference
@@ -41,10 +41,10 @@ Renders the callout text. This component is based on the `p` element.
 Use the `size` prop to control the size.
 
 ```jsx live=true
-import { Flex, CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes';
-import { InfoCircledIcon } from '@radix-ui/react-icons';
+import { Flex, CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes'
+import { InfoCircledIcon } from '@radix-ui/react-icons'
 
-<Flex direction="column" gap="3" align="start">
+;<Flex direction="column" gap="3" align="start">
   <CalloutRoot size="3">
     <CalloutIcon>
       <InfoCircledIcon />
@@ -71,7 +71,7 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
       You will need admin privileges to install and access this application.
     </CalloutText>
   </CalloutRoot>
-</Flex>;
+</Flex>
 ```
 
 ### Variant
@@ -85,10 +85,10 @@ import {
   CalloutRoot,
   CalloutIcon,
   CalloutText,
-} from '@radix-ui/themes';
-import { InfoCircledIcon } from '@radix-ui/react-icons';
+} from '@radix-ui/themes'
+import { InfoCircledIcon } from '@radix-ui/react-icons'
 
-<Flex direction="column" gap="3">
+;<Flex direction="column" gap="3">
   <CalloutRoot variant="soft">
     <CalloutIcon>
       <InfoCircledIcon />
@@ -118,7 +118,7 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
       this application.
     </CalloutText>
   </CalloutRoot>
-</Flex>;
+</Flex>
 ```
 
 ### Color
@@ -126,10 +126,10 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
 Use the `color` prop to assign a specific [color](/themes/docs/theme/color), ignoring the global theme.
 
 ```jsx live=true
-import { Flex, CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes';
-import { InfoCircledIcon } from '@radix-ui/react-icons';
+import { Flex, CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes'
+import { InfoCircledIcon } from '@radix-ui/react-icons'
 
-<Flex direction="column" gap="3">
+;<Flex direction="column" gap="3">
   <CalloutRoot color="blue">
     <CalloutIcon>
       <InfoCircledIcon />
@@ -159,7 +159,7 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
       this application.
     </CalloutText>
   </CalloutRoot>
-</Flex>;
+</Flex>
 ```
 
 ### High-contrast
@@ -167,10 +167,10 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
 Use the `HighContrast` prop to add additional contrast.
 
 ```jsx live=true
-import { Flex, CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes';
-import { InfoCircledIcon } from '@radix-ui/react-icons';
+import { Flex, CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes'
+import { InfoCircledIcon } from '@radix-ui/react-icons'
 
-<Flex direction="column" gap="3">
+;<Flex direction="column" gap="3">
   <CalloutRoot variant="soft">
     <CalloutIcon>
       <InfoCircledIcon />
@@ -188,7 +188,7 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
       An update to Radix Themes is available. See what’s new in version 3.2.0.
     </CalloutText>
   </CalloutRoot>
-</Flex>;
+</Flex>
 ```
 
 ### As alert
@@ -196,15 +196,15 @@ import { InfoCircledIcon } from '@radix-ui/react-icons';
 Add a native [WAI-ARIA `alert` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/alert_role) to the callout when the user’s immediate attention is required, like when an error message appears. The screen reader will be interrupted, announcing the new content immediately.
 
 ```jsx live=true
-import { CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes';
-import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
+import { CalloutRoot, CalloutIcon, CalloutText } from '@radix-ui/themes'
+import { ExclamationTriangleIcon } from '@radix-ui/react-icons'
 
-<CalloutRoot color="red" role="alert">
+;<CalloutRoot color="red" role="alert">
   <CalloutIcon>
     <ExclamationTriangleIcon />
   </CalloutIcon>
   <CalloutText>
     Access denied. Please contact the network administrator to view this page.
   </CalloutText>
-</CalloutRoot>;
+</CalloutRoot>
 ```
